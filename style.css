@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(42, 42, 42);
+    color: #fff;
+    font-family: DejaVu Sans Mono, monospace;
+}
+main {
+    justify-content: center;
+    display: flex;
+}
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 1150px;
+    background-color: rgba(58, 58, 58, 0);
+}
+.header__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    /* border: 1px solid #000; */
+    width: 100px;
+    padding: 5px;
+    background-color: rgb(217, 91, 91);
+    border-radius: 10px;
+}
+.header__live {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.header__circle-out {
+    position: relative;
+    background-color: #fff;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    top: 0px;
+}
+
+.live__text {
+    font-weight: 900;
+}
+.header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #535353;
+    padding: 5px 15px;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+}
+.header__right-side {
+    align-items: center;
+    display: flex;
+}
+.right__side-arrow {
+    width: 20px;
+    height: 15px;
+    border: 2.5px solid #ffffff;
+    border-radius: 2px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right__side-arrow i{
+    position: relative;
+    top: 2.5px;
+    font-size: 11px;
+}
+.right__side-text {
+}
+.header__right-stop {
+    color: #85b4f9;
+    cursor: pointer;
+}
+.header__right-stop:hover {
+    color: #a1c6ff;
+}
+
+
+
+.cont__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont__left-main {
+    /* border: 1px solid #ffffff; */
+    width: 1110px;
+    height: 540px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cont__left-main1 {
+    display: flex;
+    align-items: center;
+    width: 880px;
+    height: 500px;
+    /* border: 1px solid #ffffff; */
+}
+
+iframe {
+    pointer-events: none;
+    border-radius: 15px;
+}
+.cont__left-main2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 540px;
+    width: 210px;
+    /* border: 1px solid #ffffff; */
+}
+.webcamera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #4a4a4a;
+    
+}
+.username {
+    font-size: 14px;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 0px;
+    letter-spacing: 0px;
+    text-shadow: 0px 0 2px #000000;
+}
+
+.avatarka3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(https://webmandry.com/wp-content/uploads/2019/08/ozero-Pyati-TSvetov.jpg);
+    background-size: 150%;
+}
+.avatarka2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(221, 151, 102);
+    font-size: 35px;
+}
+.avatarka1 {
+}
+.avatarka {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    /* background-position: 780px 0px; */
+    background-image: url(https://i.pinimg.com/736x/4a/9e/46/4a9e46897965d15a927aeec47d417edb.jpg);
+    background-size: 100%;
+}
+.username-main {
+    margin-left: 30px;
+    margin-top: 420px;
+    position: absolute;
+    font-size: 17px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.cont__left-main1:hover .username-main {
+    opacity: 0.8;
+}
+
+.cont__right-1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 8px 13px;
+    /* border: 1px solid #000; */
+}
+
+.cont__right {
+    color: #353535;
+    margin-top: 15px;
+    width: 350px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.cont__right-1 i {
+    font-size: 23px;
+}
+.chatzust {
+    font-weight: 500;
+}
+.line {
+    margin: auto;
+    width: 300px;
+    margin-top: 10px;
+    border: 1px solid #d8d8d8;
+}
+.nickname {
+    color: #000000;
+    font-size: 16px;
+}
+.masage { 
+    margin-top: 20px;
+    font-size: 15px;
+}
+.masage:hover {
+    background-color: #f6f6f6;
+}
+.cont__right-2 {
+    justify-content: end;
+    flex-direction: column;
+    display: flex;
+    height: 470px;
+    /* border: 1px solid #000; */
+    padding: 7px;
+}
+.cont__right-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+input {
+    padding: 3px 10px;
+    border-radius: 25px;
+    width: 320px;
+    height: 40px;
+    background-color: #e6e6e6;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /*  border: 1px solid #915959; */
+    height: 80px;
+}
+
+.fa-microphone-slash {
+    font-size: 14px;
+    background-color: #f36c6c;
+    padding: 17px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.fa-video-slash {
+    font-size: 14px;
+    background-color: #f36c6c;
+    padding: 17px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.fa-closed-captioning {
+    font-size: 16px;
+    background-color: #484848;
+    padding: 17px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.fa-hand {
+    font-size: 17px;
+    background-color: #484848;
+    padding: 17px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.fa-ellipsis-vertical {
+    font-size: 17px;
+    background-color: #484848;
+    padding: 17px 23px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.fa-phone {
+    font-size: 18px;
+    background-color: #f36c6c;
+    padding: 17px 30px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.fa-ellipsis-vertical:hover {
+    background-color: #4c4c4c;
+    cursor: pointer;
+}
+.fa-hand:hover {
+    background-color: #4c4c4c;
+    cursor: pointer;
+}
+.fa-closed-captioning:hover {
+    background-color: #4c4c4c;
+    cursor: pointer;
+}
+
+.fa-microphone-slash:hover {
+    background-color: #f87d7d;
+    cursor: pointer;
+}
+
+.fa-video-slash:hover {
+    background-color: #f87d7d;
+    cursor: pointer;
+}
+
+.fa-phone:hover {
+    background-color: #f87d7d;
+    cursor: pointer;
+}
